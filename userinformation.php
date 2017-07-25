@@ -1,66 +1,6 @@
 <html>
     <head>
-        <style>
-            .reg1{
-                width:45%;
-                height:750px;
-
-                margin:auto;
-                background-color:	#FFFACD;
-                box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.22);
-
-            }
-            h1{
-                background:	#F4A460;
-                text-transform: uppercase;
-                color: white;
-                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-                font-family: 'Open Sans Condensed', sans-serif;
-                font-size: 18px;
-                text-align: center;
-                font-weight: 100;
-                padding: 20px;
-
-            }
-            #userinfo
-            {
-                margin-left:230px;
-
-            }
-
-            button {  
-                background-color:#000000;
-                margin-top:10px;
-                color: #FFFFFF;
-                width:20%;
-                height:50px;	
-                border-radius:50px;
-                margin-left:280px;
-                font-family: 'Open Sans Condensed', sans-serif;
-                font-size: 18px;
-                text-transform: uppercase;
-            }
-            a{
-                text-decoration: none;
-                color: #FFFFFF;
-            }
-
-            .namefield{
-                width:650px;
-                height:50px;
-                float:left;
-                margin-top: 15px;
-                margin-left:20px;
-            }
-            label{
-                line-height: 50px;
-                font-size: 20px;
-                font-weight: bold;
-                margin-left: 30px;
-                color:brown;
-            }
-
-        </style>
+        <link rel="stylesheet" href="css/userinfostyle.css">
     </head>
     <body>
         <div class="reg1">
@@ -95,8 +35,7 @@
                     $date = $rows['user_date'];
 
 
-                    echo
-                    "<div class='namefield'><label>Name:</label>  $name</div>";
+                    echo"<div class='namefield'><label>Name:</label>  $name</div>";
                     echo "<div class='namefield'><label>Email:</label>  $email</div>";
                     echo "<div class='namefield'><label>DOB:</label>  $dob</div>";
                     echo "<div class='namefield'><label>Mobile:</label>  $mobile</div>";
