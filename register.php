@@ -16,7 +16,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/formstyle.css">
+        <link rel="stylesheet" href="css/registerstyle.css">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/jqvalidation.js"></script>
 
