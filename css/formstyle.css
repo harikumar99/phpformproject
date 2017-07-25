@@ -1,98 +1,47 @@
 .reg1{
-    width:30%;
-    height:830px;;
-    text-align:center;
-    margin:auto;
-    background-color:	#FFFACD;
-    box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.22);
+                width:45%;
+                height:300px;
 
-}
-h1{
-    background:	#F4A460;
-    text-transform: uppercase;
-    color: white;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
-    font-weight: 100;
-    padding: 20px;
+                margin:auto;
+                background-color:	#FFFACD;
+                box-shadow:  0px 0px 30px rgba(0, 0, 0, 0.22);
 
-}
-.field
-{
-    width:550px;
-    height:75px;
-    float:left;
-    margin-top: 10px;
+            }
+            h1{
+                background:	#F4A460;
+                text-transform: uppercase;
+                color: white;
+                text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 18px;
+                text-align: center;
+                font-weight: 100;
+                padding: 20px;
 
-}
-.namefield{
-    width:150px;
-    height:50px;
-    float:left;
-    margin-top: 15px;
-    margin-left:20px;
-}
-label{
-    line-height: 50px;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 30px;
-}
+            }
 
-.textfield  {
-    width:330px;
-    height:50px;
-    margin-top: 15px;
-    margin-left:0px;
-    float:left;
-} 
-input,select,textarea{
-    margin-top:7px;
-    width:300px;
-    height:30px;
-}
-#gender,#options{
-    width:20px;
-    height:15px;
-    margin-right: 10px;
-    margin-top: 15px;
-}
-textarea{
-    margin-top:7px;
-    width:300px;
-    height:100px;
-
-}
-
-button          {  
-    background-color:#000000;
-    margin-top:85px;
-    color: #FFFFFF;
-    width:20%;
-    height:50px;	
-    border-radius:50px;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-a{
-    text-decoration: none;
-    color:white;
-}
-span{
-    float:left;
-    margin-left:13px;
-    font-size:15px;
-    color:red;
-}
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 24 Jul, 2017, 10:22:33 AM
-    Author     : oxss
-*/
+            button           {  
+                background-color:#000000;
+                margin-top:10px;
+                color: #FFFFFF;
+                width:20%;
+                height:50px;	
+                border-radius:50px;
+                margin-left:150px;
+                font-family: 'Open Sans Condensed', sans-serif;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            a{
+                text-decoration: none;
+                 color: #FFFFFF;
+            }
+            #userdetails{
+                
+                margin-top:20px;
+                margin-left: 20px;
+                
+            }
+tr:nth-child(even) {background-color:#d3d3d3; color:blueviolet}
+tr:nth-child(odd) {background-color:whitesmoke;}
 
