@@ -1,10 +1,6 @@
 $(document).ready(function () {
     $('#submit').click(function () {
-        
-        
-        
-        
-        
+
         var name_regex = /^[a-zA-Z]+$/;
         var name = $("#name").val();
         {
@@ -52,7 +48,7 @@ $(document).ready(function () {
 
             }
         }
-        
+
         var email_regex = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
         var email = $("#email").val();
         {
@@ -173,7 +169,7 @@ $(document).ready(function () {
         }
 
     });
-  $("#name").keyup(function () {
+    $("#name").keyup(function () {
 
         var name_regex = /^[a-zA-Z]+$/;
         var name = $("#name").val();
