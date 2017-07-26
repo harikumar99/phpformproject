@@ -30,6 +30,7 @@
             <?php
             if ($_POST[submit]) {
                 include ('connect-mysql.php');
+                
                 $name = $_POST[name];
                 $password =md5($_POST[pwd]);
                 $email = $_POST[email];
@@ -37,9 +38,12 @@
                 $mobile = $_POST[mobile];
                 $gender = $_POST[gender];
                 $address = $_POST[address];
+                $target = "upload/";
+                $pict = $target.$_FILES['pic']['name'];
+                move_uploaded_file($_FILES['pic']['tmp_name'], $target.$_FILES['pic']['name']);
                 $date = date('Y-m-d');
 
-                $sqlinsert = "INSERT INTO user_details(user_name,user_password,user_email,user_dob,user_mobile,user_gender,user_address,user_date)VALUES('$name','$password','$email','$dob','$mobile','$gender','$address','$date')";
+                $sqlinsert = "INSERT INTO user_details(user_name,user_password,user_email,user_dob,user_mobile,user_gender,user_address,user_pic,user_date)VALUES('$name','$password','$email','$dob','$mobile','$gender','$address','$pict','$date')";
 
                 if (!mysqli_query($dbcon, $sqlinsert)) {
 
