@@ -31,7 +31,7 @@
             if ($_POST[submit]) {
                 include ('connect-mysql.php');
                 $name = $_POST[name];
-                $password = $_POST[pwd];
+                $password =md5($_POST[pwd]);
                 $email = $_POST[email];
                 $dob = $_POST[dob];
                 $mobile = $_POST[mobile];
