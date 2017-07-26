@@ -10,16 +10,18 @@ and open the template in the editor.
         <title>Welcome</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/indexstyle.css">
+        <link rel="stylesheet" href="css/styleindex.css">
     </head>
     <body>
         <div class="reg1">
             <h1>welcome</h1>
             <div>
-                <button id="register"><a href="register.php">Register</a></button>
-                <button id="login"><a href='login.php'>Login</a></button>
+                <a href="register.php"><button id="register">Register</button></a>
+               <a href='login.php'> <button id="login">Login</button></a>
             </div>
-            <div id='userdetails'>
+           
+            </div> 
+         <div id='userdetails'>
                 
                 
             <?php
@@ -58,8 +60,6 @@ and open the template in the editor.
                   echo "</table>";  
            ?>
             </div>
-            </div>   
-    </form>
-</div>
+   
 </body>
 </html>
