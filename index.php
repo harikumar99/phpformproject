@@ -11,6 +11,12 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styleindex.css">
+        <style>
+            img{
+                width:150px;
+                height:150px;
+            }
+        </style>
     </head>
     <body>
         <div class="reg1">
@@ -34,24 +40,17 @@ and open the template in the editor.
                 
                
                 echo "<table border-collapse=collapse>";
-                echo"<tr style='background-color:gray;'><th>ID</th><th>NAME</th><th>EMAIL</th><th>DOB</th><th>MOBILE</th><th>GENDER</th><th>ADDRESS</th><th>DATE OF REGISTRATION</th></tr>";
+                echo"<tr style='background-color:gray;'><th>NAME</th><th>PICTURE</th><th>DATE OF REGISTRATION</th></tr>";
                 while ($rows = mysqli_fetch_assoc ($result)){
-                     $id = $rows['user_id'];
+                    
                      $name = $rows['user_name'];
-                     $email= $rows['user_email'];
-                     $dob = $rows['user_dob'];
-                     $mobile = $rows['user_mobile'];
-                     $gender= $rows['user_gender'];
-                     $address = $rows['user_address'];
+                     $pic=$rows['user_pic'];
                      $date= $rows['user_date'];
                     
-                    echo "<tr><td> $id</td>";
-                    echo "<td> $name</td>";
-                    echo "<td> $email</td>";
-                    echo "<td> $dob</td>";
-                    echo "<td> $mobile</td>";
-                    echo "<td> $gender</td>";
-                    echo "<td> $address</td>";
+                  
+                    echo "<tr><td> $name</td>";
+                   
+                    echo "<td><img src='$pic'></td>";
                     echo "<td> $date</td></tr>";
                                         
                 
