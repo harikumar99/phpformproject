@@ -37,7 +37,7 @@
                     if (isset($_POST[submit])) {
                         include('connect-mysql.php');
                         $name = $_POST[name];
-                        $pass = $_POST[pwd];
+                        $pass = md5($_POST[pwd]);
 
                         $sqlquery = "SELECT * FROM user_details WHERE user_name='$name' and user_password='$pass'";
 
