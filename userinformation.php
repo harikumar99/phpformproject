@@ -46,7 +46,7 @@
                      }
                 ?>
             </div>
-            <button><a href='logout.php'>Logout</a></button>
+            <a href='logout.php'><button>Logout</button></a>
         </div>
 
 
