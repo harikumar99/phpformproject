@@ -16,7 +16,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="css/registerstyle.css">
+        <link rel="stylesheet" href="css/styleregister.css">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/jqvalidation.js"></script>
 
@@ -83,7 +83,7 @@ and open the template in the editor.
                         <span id="generror"></span>
                     </div>
                 </div>
-               <!--<div class="field">
+               <div class="field">
 
                     <div class="namefield">
                         <label>Picture</label>
@@ -93,7 +93,7 @@ and open the template in the editor.
                         <span id="picerror"></span>
 
                     </div>
-                </div>-->
+                </div>
 
                 <div class="field">
                     <div class="namefield">
@@ -107,7 +107,8 @@ and open the template in the editor.
                 </div>
                 <div class="field">
 
-                    <button id="submit" name="submit" value='submit'>SUBMIT</button>
+                    <button id="submit" name="submit" value='submit'>SUBMIT</button><br>
+                    <a href="login.php" style="color:navy">Already a member Login</a>
                 </div>   
             </form>
 
