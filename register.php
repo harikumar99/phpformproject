@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+session_start();
+if($_SESSION['username'])
+{
+    header('location:userinformation.php');
+}
+?>
 <html>
     <head>
         <title>Registration Form</title>
@@ -24,7 +19,7 @@ and open the template in the editor.
     <body>
         <div class="reg1">
             <h1>Registration Form</h1>
-            <form method="POST" action="insert.php">
+            <form method="POST" action="insert.php" enctype="multipart/form-data">
                 <div class="field">
                     <div class="namefield">
                         <label>Name</label>
